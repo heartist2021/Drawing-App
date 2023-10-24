@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Drawing App</title>
+</head>
+<body>
+    <div class="app-container">
+        <h1 class="app-title">Drawing App</h1>
+        
+        <div class="controls">
+            <label for="backgroundColor">Background Color:</label>
+            <input type="color" id="backgroundColor">
+
+            <label for="penColor">Pen Color:</label>
+            <input type="color" id="penColor">
+
+            <button id="undoButton">Undo</button>
+            <button id="redoButton">Redo</button>
+            <button id="clearButton">Clear</button>
+            <button id="saveButton">Save</button>
+        </div>
+
+        <div class="drawing-container">
+            <canvas id="canvas" width="800" height="600"></canvas>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
